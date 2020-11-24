@@ -1,0 +1,15 @@
+<%- include("partials/header"); %> 
+
+<div class="red-back"></div>
+
+<section class="home" id="recipe">
+    <div class="home-text">
+        <p class="main-text"><%= name %></p>
+        <p class="subtext">Cusine: <%= cusine %><span></span></p>
+        <p class="subtext">Category: <%= category %><span></span></p>
+        <iframe src="https://www.youtube.com/embed/<%= link.slice(32, link.length) %> " height="240px" width="400px" frameborder="0"></iframe>
+    </div>
+    <img src="<%= image %> " alt="Meal Pic" class="home-img">
+</section>
+
+<%- include("partials/footer"); %> 
